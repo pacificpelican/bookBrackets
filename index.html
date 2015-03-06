@@ -1,0 +1,112 @@
+<!DOCTYPE html><!-- powered by Book Brackets http://djmcloud.danieljmckeown/bookbrackets/ v0.8.0 copyright 2015 by Dan McKeown http://danmckeown.info -->
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>**Book**</title>
+
+<link rel="stylesheet" href="css/materialize.css">
+<link rel="stylesheet" href="css/bookscroll.css">
+
+</head>
+
+<body>
+<!--   bookScroll  -->
+<script id="mustacheTempalte_b" type="text/template">
+		
+  {{#shows}}
+
+	<div id="sidenavigation" class="leftnav">
+
+			<ul id="slide-out" class="side-nav fixed">
+				<a href="#{{title}}"><li><i>{{{title}}}</i></li></a>
+				<li></li>
+					  <li><a href="#{{Chapter1}}">{{Chapter1title}}</a></li>
+	            <li><a href="#{{SectionA}}">{{SectionAtitle}}</a></li>
+	            {{{yetMoreChapters}}}
+	    	</ul><!-- #slide-out -->
+	    		
+	  <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="medium mdi-navigation-menu"></i></a>
+	</div><!-- .leftnav -->
+
+<div id="booktext" class="row mainarea"> 
+
+	<div id="spacecolumn" class="col s1 m1 l1">
+	__
+	</div>
+	<div id="bookcolumn" class="col s11 m11 l9">
+	
+			<header>
+				<h1><a id="{{title}}" href="#{{title}}">{{title}}</a></h1>
+			</header>
+		<main>
+			<div class="row" id="authorcard">
+        		<div class="none">
+          			<div class="card blue-grey lighten-1">
+            			<div class="card-content white-text">
+              				<p><h5>by <a href="{{authorURI}}">{{authorName}}</a></h5><h8> for <a href="{{bookPublisherURI}}">{{bookPublisherName}}</a></h8></p>
+            			</div><!-- .card-content -->
+             			<div class="card-action">
+             			 	<a href="{{link1URI}}">{{link1name}}</a>
+           				    <a href="{{link2URI}}">{{link2name}}</a>
+           				    <a href="{{link3URI}}">{{link3name}}</a>
+           				    <a href="{{link4URI}}">{{link4name}}</a>
+            			</div>
+                    </div>
+        		</div>
+    		</div>
+
+			<div class="illustration" id="image1">
+				<img src="{{bookImage}}" alt="illustration" />
+			</div><!-- #image1 -->
+
+				<div class="book content-area" id="bookContent">
+					<h2><a id="{{Chapter1}}" href="#{{Chapter1}}">{{Chapter1}}</a></h2>
+					<p>
+					{{chapter1text}}
+					</p>
+					<h4><a id="{{SectionA}}" href="#{{SectionA}}">{{sectionA}}</a></h4>
+					<p>
+					{{sectionAtext}}
+					</p>
+					<p>
+					{{moreBookContent}}
+					</p>
+					{{{yetMoreBookContent}}}
+				</div><!-- #bookContent-->
+		</main>
+   
+ 	</div><!-- #bookcolumn -->
+ </div><!-- #booktext -->
+
+	<div id="portagethefooter"><br><br>
+	  <footer id="colophon" class="site-footer" role="contentinfo">
+	    <div class="card-content grey darken-2 white-text">
+	    <center>
+	      <a class="grey-text text-lighten-3" href="{{bookURI}}">{{title}}</a> 
+	      <a class="grey-text text-lighten-3" href="{{bookLicenseURI}}">{{bookLicense}}</a> {{bookYear}} by <a href="{{authorURI}}"><font style="color:white">{{authorName}}</font></a> | powered by <a class="grey-text text-lighten-3" href="http://djmcloud.danieljmckeown.com/bookbrackets/">Book Brackets</a> </center>
+	    </div><!-- .site-info -->
+	  </footer><!-- #colophon -->
+	</div><!-- portagethefooter -->
+
+  {{/shows}}
+		
+	</script>
+<!--   END OF bookScroll  -->
+
+<div class="target-output" data-template-chosen="b"></div>
+
+	  <script src='js/jquery-1.11.2.min.js'></script>
+	  <script src='js/mustache.js'></script>
+	  <script src="js/BookContent.js"></script>
+	  <script type="text/javascript" src="js/materialize.js"></script>
+
+  	<script>
+   	// Initialize collapse button
+ 		$(".button-collapse").sideNav();
+  	// Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  	// $('.collapsible').collapsible();
+  	</script>
+
+</body>
+</html>

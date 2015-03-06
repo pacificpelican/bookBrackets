@@ -1,0 +1,157 @@
+/* custom CSS for Book Brackets project http://djmcloud.danieljmckeown.com/bookbrackets/ copyright 2015 by Dan McKeown http://danmckeown.info */
+/* licensed under the MIT license: https://github.com/Dogfalo/materialize/blob/79f9c8435b0da7e6f907a54ab3120e5b609d45ee/LICENSE */
+
+/*
+side nav formatting via [MIT-licensed] Materialize v0.95.2 http://materializecss.com
+*/ 
+
+p {
+     font-size: 2.9rem;
+   }
+
+li {
+     font-size: 1.9rem;
+   }
+
+@media only screen and (device-width: 768px) {
+  p {
+     font-size: 1.7rem;
+    }
+
+  li {
+     font-size: 1.3rem;
+     }
+                                            }
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+                        }
+    body  {
+       font-size: 2.6rem;
+          }
+                                            } 
+
+  @media only screen and (min-width : 993px) {
+    body {
+     font-size: 1.2rem;
+          }
+                                              }
+
+  @media only screen and (max-width : 601px) {
+      #bookcolumn {
+        padding: 0 1.9rem;
+                  }
+                                              }
+
+  @media only screen and (min-width : 602px) and (max-width : 1200px) {
+      #bookcolumn {
+        padding: 0 3.9rem;
+                  }
+                                                                      }
+
+ @media only screen and (max-width : 601px) {
+  h1 {
+     font-size: 2.7rem;
+      }
+                                            }
+
+  @media only screen and (max-width : 601px) {
+  h2 {
+     font-size: 1.6rem;
+  
+     }
+                                            }
+
+  @media only screen and (max-width : 601px) {
+  p {
+     font-size: 1.5rem;
+     margin: 0rem 0 0rem 0;
+    }
+ li {
+  font-size: 1.3rem;
+   }
+                                              }
+
+ @media only screen and (max-width : 992px) {
+  h4 {
+     font-size: 1.3em;
+  
+ }
+h5 {
+     font-size: 1.1em;
+  
+ }
+                                          }
+
+ @media only screen and (min-width : 993px) {
+header, main, footer {
+    padding-left: 240px;
+                    }
+                                            }
+
+/*
+  END OF side nav formatting via Materialize 
+  */
+
+ @media only screen and (min-width : 993px) {
+#bookcolumn {
+  padding: 0 3.5rem;
+            }
+  li {
+     font-size: 1.0rem;
+   }
+                                            }
+ 
+ @media only screen and (min-width : 993px) {
+h1 {
+  font-size: 2.6rem;
+  line-height: 2.96rem;
+  margin: 2.1rem 0 1.68rem 0;
+   }
+                                            }
+
+@media only screen and (min-width : 993px) {
+h2 {
+  font-size: 2.1rem;
+  line-height: 2.16rem;
+  margin: 2.1rem 0 1.68rem 0;
+   }
+                                            }
+ 
+@media only screen and (min-width : 993px) {
+h4 {
+  font-size: 2.0rem;
+  line-height: 2.16rem;
+  margin: 2.1rem 0 1.68rem 0;
+   }
+                                            }
+
+@media only screen and (min-width : 993px) {
+p {
+  font-size: 1.3rem;
+   }
+                                            }
+ 
+ .icon-block {
+  padding: 0 15px;
+            }
+
+a {
+  color: blue;
+}
+
+/* via _s by Automattic http://underscores.me: */
+
+img {
+  height: auto; /* Make sure images are scaled correctly. */
+  max-width: 100%; /* Adhere to container width. */
+  }
+
+/* END OF via _s by Automattic: */
+
+@media only screen and (device-width: 768px) {
+body {
+     font-size: 20px;
+   }   
+                                            }
