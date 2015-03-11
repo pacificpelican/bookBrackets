@@ -74,3 +74,9 @@ March 6, 2015
 v0.8.0
 March 6, 2015
 -readme.md updates
+
+v0.9.0
+March 11, 2015
+-styling cleanup on BookContent.js, which was moved to a new /data directory
+-added data fields in BookContent.js for previously missiing content like {{sectionAtext}}
+-noted usefulness of ids in sample cotent [__w-ids__]
