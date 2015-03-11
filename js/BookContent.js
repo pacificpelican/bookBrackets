@@ -2,11 +2,11 @@ var targetContainer = $(".target-output"),
     templateDefined = $(".target-output").data("template-chosen"),
     template = $("#mustacheTempalte_"+templateDefined).html();
 	  
-	  	var shows = { "shows" : [ 
+var shows = { "shows" : [ 
 	  	  { "title" : "Book Title here",
 	  	  	"authorName" : "author name here",
 	  	  	"bookLicense" : "copyright",
-	  	  	"bookLicenseURI" : "http://djmcloud.danieljmckeown.com/64/copyright/",
+	  	  	"bookLicenseURI" : "",
 	  	  	"bookPublisherName" : "publisher name here",
 	        "authorURI" : "author URL here",    
 	        "bookPublisherURI" : "publisher URL here",
@@ -23,14 +23,14 @@ var targetContainer = $(".target-output"),
 	        "link4name" : "",
 	        "Chapter1title" : "",
 	        "SectionAtitle" : "",
-	        "yetMoreChapters" : "li-table-of-contents-in-no-whitespace-single-quotes-HTML-here",
-	        "yetMoreBookContent" : "book-content-in-no-whitespace-single-quotes-HTML-here"
+	        "sectionAtext" : "",
+	        "moreBookContent" : "",
+	        "yetMoreChapters" : "li-table-of-contents-in-no-whitespace-single-quotes-HTML-w-ids-here",
+	        "yetMoreBookContent" : "book-content-in-no-whitespace-single-quotes-HTML-w-ids-here"
 	        
-	        
-
 	      }
 	    ] };
 
-		var html = Mustache.to_html(template, shows);
+var html = Mustache.to_html(template, shows);
 
-		$(targetContainer).html(html);
+  $(targetContainer).html(html);
