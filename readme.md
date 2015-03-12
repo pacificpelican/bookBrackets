@@ -6,4 +6,4 @@ Book Brackets is (as are MaterializeCSS and jQuery and Mustache.js) licensed und
 
 You can see the changes to the project in the [changelog.md](changelog.md) file and view the markup in the [index.html](index.html) file.
 
-The template includes tags surrounded by double curly brackets {{}} that indicate what would go in that part of the template, for example {{title}} and {{authorURI}}.  These fields can be specified by putting data into the [BookContent.js](js/BookContent.js) file.
+The template includes tags surrounded by double curly brackets {{}} that indicate what would go in that part of the template, for example {{title}} and {{authorURI}}.  These fields can be specified by putting data into the [BookContent.js](data/BookContent.js) file.

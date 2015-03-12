@@ -80,3 +80,7 @@ March 11, 2015
 -styling cleanup on BookContent.js, which was moved to a new /data directory
 -added data fields in BookContent.js for previously missiing content like {{sectionAtext}}
 -noted usefulness of ids in sample cotent [__w-ids__]
+
+v0.9.1
+March 11, 2015
+-readme.md fix: BookContent.js moved
